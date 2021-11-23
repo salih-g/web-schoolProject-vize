@@ -10,18 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/logo.png"
-                         class="me-2"
-                         height="20"
-                         alt=""
-                         loading="lazy" />
-                    <small>PartyInvites</small>
-                </a>
-            </div>
-        </nav>
+        <partial name="_Navbar" />
     </header>
 
 
@@ -31,12 +20,7 @@
         </main>
     </div>
 
-    <footer class="text-center text-white fixed-bottom" style="background-color: #343A40;">
-        <div class="container p-4"></div>
-        <div class="text-center p-3" style="background-color: #343A40;">
-            &copy; 2021 - PartyInvites - <a  asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    <partial name="_Footer" />
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
