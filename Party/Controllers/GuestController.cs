@@ -14,17 +14,37 @@ namespace Party.Controllers
 			_db = db;
 		}
 
+
+		[HttpGet]
 		public IActionResult Index()
 		{
 			return View();
 		}
 
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public IActionResult Index(GuestResponse obj)
+		{
+			if (ModelState.IsValid)
+			{
+				_db.guestResponses.Add(obj);
+				_db.SaveChanges();
+				return View("Thanks", obj);
+			}
+			else
+			{
+				return View();
+			}
+		}
+
+		[HttpGet]
 		public IActionResult List()
 		{
 			IEnumerable<GuestResponse> objGuestList = _db.guestResponses;
 			return View(objGuestList);
 		}
 
+		[HttpGet]
 		public IActionResult Thanks()
 		{
 			return View();
