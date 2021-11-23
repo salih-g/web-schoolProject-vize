@@ -1,11 +1,14 @@
 ﻿using Party.Data;
 using Party.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace Party.Controllers
 {
 	public class GuestController : Controller
 	{
+
+
 
 		private readonly ApplicationDbContext _db;
 
@@ -40,7 +43,21 @@ namespace Party.Controllers
 		[HttpGet]
 		public IActionResult List()
 		{
-			IEnumerable<GuestResponse> objGuestList = _db.guestResponses;
+
+			var result = from guest in _db.guestResponses
+						 select new GuestResponse
+						 {
+							 Id = guest.Id,
+							 Email = guest.Email,
+							 Name = guest.Name,
+							 Phone = guest.Phone,
+							 WillAttend = guest.WillAttend
+						 };
+
+			IEnumerable<GuestResponse> objGuestList = result.ToList();
+
+
+
 			return View(objGuestList);
 		}
 
