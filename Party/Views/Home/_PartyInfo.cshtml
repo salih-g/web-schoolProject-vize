@@ -1,46 +1,41 @@
 ﻿
-   <div class="container" style="margin-top:50px;">
-        <div class="row">
+<div class="container" style="margin-top:50px;">
+    <div class="row">
 
-            <div class="col-md-2"> bla b</div>
-            <div class="col-md-10">
-                <h3>Yarışma Hakkında</h3>
-                <p style="text-align: justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at turpis vel
-                    massa hendrerit hendrerit. Nullam cursus maximus purus, sed ultrices tortor
-                    congue et. Quisque mattis mi at erat interdum, quis hendrerit felis ultricies.
-                    Praesent ut facilisis purus. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Maecenas efficitur mi nec augue rhoncus porta. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-                    Sed tincidunt at nunc ullamcorper malesuada. Integer sed ligula mi. Vivamus
-                    fringilla eget magna sit amet eleifend. Donec quis tortor efficitur, accumsan
-                    diam ac, fringilla arcu.
-                </p>
-                <p style="text-align: justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at turpis vel
-                    massa hendrerit hendrerit. Nullam cursus maximus purus, sed ultrices tortor
-                    congue et. Quisque mattis mi at erat interdum, quis hendrerit felis ultricies.
-                    Praesent ut facilisis purus. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Maecenas efficitur mi nec augue rhoncus porta. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-                    Sed tincidunt at nunc ullamcorper malesuada. Integer sed ligula mi. Vivamus
-                    fringilla eget magna sit amet eleifend. Donec quis tortor efficitur, accumsan
-                    diam ac, fringilla arcu.
-                </p>
-                <p style="text-align: justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at turpis vel
-                    massa hendrerit hendrerit. Nullam cursus maximus purus, sed ultrices tortor
-                    congue et. Quisque mattis mi at erat interdum, quis hendrerit felis ultricies.
-                    Praesent ut facilisis purus. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Maecenas efficitur mi nec augue rhoncus porta. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-                    Sed tincidunt at nunc ullamcorper malesuada. Integer sed ligula mi. Vivamus
-                    fringilla eget magna sit amet eleifend. Donec quis tortor efficitur, accumsan
-                    diam ac, fringilla arcu.
-                </p>
-
-                <a asp-controller="Guest" asp-action="Index" class="btn btn-primary btn-lg btn-block">Apply</a>
-            </div>
-
+        <div class="col-md-2">
+            <partial name="_Sidebar" />
         </div>
+        <div class="col-md-10" style="font-size: 20px">
+            <h3>Yarışma Hakkında</h3>
+            <p style="text-align: justify">
+                Türkiye dünya çapında olağanüstü bir yarışmaya ev sahipliği yapıyor.
+                Teknofest etkinliğinin bir parçası olarak, Dijital Dönüşüm Ofisi Hack
+                İstanbul 2021 Yarışmasını düzenliyor.
+            </p>
+            <p style="text-align: justify">
+                Hackerların becerileri, dünyanın önde gelen uzmanlarının rehberliğinde
+                hazırlanan gelişmiş gerçek yaşam siber saldırı senaryoları ile sınırlara
+                itilecektir. Yarışmaya kayıt için son tarih 30 Haziran.
+            </p>
+            <p style="text-align: justify">
+                Ön seçim aşamasında başarılı olan hackerlar, farklı zorluk ve karmaşıklık
+                seviyelerine sahip zorlukları içeren jeopardy tarzı bir CTF olan 2.ön seçim
+                mücadelesine hak kazanacaklar. 18 saatlik CTF mücadelesi sadece en iyi bilgisayar
+                korsanlarını final turuna taşıyacak. CTF'Yİ başaran ilk 10 takım, 21-26 Eylül tarihlerinde
+                İstanbul Atatürk Havalimanı'nda düzenlenecek olan büyük final etabı için İstanbul'a davet edilecek.
+            </p>
+
+            <p style="text-align: justify">
+                Yarışma için uygun Katılımcı Eğitim seviyeleri
+                <br />
+                - Lise Öğrencileri<br />
+                - Ön Lisans Öğrencileri, Lisans Öğrencileri, Yüksek Lisans Öğrencileri ve Doktora Öğrencileri <br />
+                - Üniversite Mezunu
+            </p>
+
+
+            <a asp-controller="Guest" asp-action="Index" class="btn btn-primary btn-lg btn-block">Başvuru yapmak için Tıklayınız !</a>
+        </div>
+
     </div>
+</div>
