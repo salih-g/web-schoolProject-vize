@@ -5,16 +5,16 @@
 
 <section>
     <div>
-        <h1>Thank you, @Model.Name!</h1>
+        <h1>Teşekkürler, @Model.Name!</h1>
         @if (Model.WillAttend == true)
         {
-            @:It's great that you're coming. The drinks are already in the fridge!
+            @:Katılıcağını görmek çok güzel. Katılmanı dört gözle bekliyoruz
         }
         else
         {
-            @:Sorry to hear that you can't make it, but thanks for letting us know.
+            @:Gelemeyeceğin için üzüldüm, fakat haber verdiğin için teşekkürler.
         }
     </div>
-    Click <a asp-controller="Guest" asp-action="List">here</a> to see who is coming.</div>
+    Katılımcı listesini görmek için <a asp-controller="Guest" asp-action="List">tıklayınız.</a>
 </section>
 

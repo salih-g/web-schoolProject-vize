@@ -8,18 +8,18 @@ namespace Party.Models
 		[Key]
 		public int Id { get; set; }
 
-		[Required(ErrorMessage = "Please enter your name")]
+		[Required(ErrorMessage = "Lütfen isminizi giriniz !")]
 		public string Name { get; set; }
 
-		[Required(ErrorMessage = "Please enter your email address")]
+		[Required(ErrorMessage = "Lütfen mail adresinizi giriniz !")]
 		[EmailAddress]
 		public string Email { get; set; }
 
 
-		[Required(ErrorMessage = "Please enter your phone number")]
+		[Required(ErrorMessage = "Lütfen telefon numaranızı giriniz !")]
 		public string Phone { get; set; }
 
-		[Required(ErrorMessage = "Please specify whether you'll attend")]
+		[Required(ErrorMessage = "Katılım bilgisini doldurunuz !")]
 		public bool? WillAttend { get; set; }
 	}
 }
