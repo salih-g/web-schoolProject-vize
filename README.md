@@ -7,5 +7,5 @@ yansıtılmalıdır (Code-first yaklaşımı)
 kullanılmalıdır.
 - [X] View katmanında CSS ve Bootstrap kullanılmalıdır.
 - [X] Denetleyici katmanında Linq sorgusu bulunmalıdır.
-- [ ] View katmanında hazır template kullanılmalıdır
-- [ ] Tasarım bitirilicek.
+- [x] View katmanında hazır template kullanılmalıdır
+- [x] Tasarım bitirilicek.
