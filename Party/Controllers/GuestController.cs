@@ -45,6 +45,7 @@ namespace Party.Controllers
 		{
 
 			var result = from guest in _db.guestResponses
+						 where guest.WillAttend == true
 						 select new GuestResponse
 						 {
 							 Id = guest.Id,
